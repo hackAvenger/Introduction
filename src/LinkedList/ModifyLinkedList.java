@@ -1,14 +1,6 @@
 package LinkedList;
 
-public class ModifyLinkedList {
-
-  public static void printNode(Node root) {
-    Node head = root;
-    while (head != null) {
-      System.out.print(head.data + " ");
-      head = head.next;
-    }
-  }
+public class ModifyLinkedList extends PrintLinkedList {
 
   public static void modifyLinkedList(Node root) {
 
@@ -58,6 +50,8 @@ public class ModifyLinkedList {
     }
     return count;
   }
+
+
 
   public static void main(String[] agr) {
     Node root = new Node(10);
